@@ -5,7 +5,7 @@ use Mojolicious::Lite;
 
 get '/' => sub {
   my $self = shift;
-  $self->render(text => $self->tx->remote_address);
+  $self->render(text => $self->tx->remote_address, format => "text");
 };
 
 app->start;
