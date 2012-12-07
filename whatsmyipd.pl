@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-#  Copyright (c) 2012 David Caldwell,  All Rights Reserved. -*- cperl -*-
+#  Copyright (c) 2012 David Caldwell -*- cperl -*-
 
 use Mojolicious::Lite;
 
