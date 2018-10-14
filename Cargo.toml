@@ -4,8 +4,8 @@ version = "0.1.0"
 authors = ["david@porkrind.org"]
 
 [dependencies]
-iron = "0.6.*"
-chrono = "0.4"
+rocket = "0.3.17"
+rocket_codegen = "0.3.17"
 
 [[bin]]
 name = "whatsmyipd"
