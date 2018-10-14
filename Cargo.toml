@@ -1,0 +1,12 @@
+[package]
+name = "whatsmyipd"
+version = "0.1.0"
+authors = ["david@porkrind.org"]
+
+[dependencies]
+iron = "0.6.*"
+chrono = "0.4"
+
+[[bin]]
+name = "whatsmyipd"
+path = "whatsmyipd.rs"

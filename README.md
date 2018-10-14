@@ -4,29 +4,17 @@ What's My IP?
 Ever find yourself wondering that? Then set up this tiny HTTP handler on a
 remote server somewhere and then hit it with your browser or curl.
 
-## Installing
+## Building
 
-### On Debian or Ubuntu:
+Requires [Rust](https://www.rust-lang.org/).
 
-1. apt-get install libmojolicious-perl
-2. ./whatsmyipd.pl daemon
+1. cargo build --release
+2. ./target/release/whatsmyipd
 
-### Anywhere else:
+## Configuring
 
-It varies, but most likely:
-
-1. cpan -i Mojolicious
-2. ./whatsmyipd.pl daemon
-
-### Other options
-
-For daemon options (like setting the port):
-
-    ./whatsmyipd.pl daemon --help
-
-For alternate ways to run (CGI, plack, etc.):
-
-    ./whatsmyipd.pl --help
+Set the `WHATSMYIP_PORT` env var to configure the listener port. The default
+is `3141`.
 
 ## License
 
